@@ -53,11 +53,11 @@ export default function Layout({
           <div className="justify-between container px-6 h-16 flex items-center lg:items-stretch mx-auto">
             <div className="flex items-center">
               <div className="mr-10 flex items-center">
-                <h3 className="text-base text-gray-800 font-bold tracking-normal leading-tight ml-3 hidden lg:block">
+                <h3 className="text-base text-gray-800 font-bold tracking-normal leading-tight ml-3 block">
                   Logo
                 </h3>
               </div>
-              <ul className="pr-32 xl:flex hidden items-center h-full">
+              <ul className="pr-32 flex items-center h-full">
                 {menuEntries.map((entry, index) => (
                   <DesktopMenuEntry key={index} link={entry.link}>
                     {entry.title}
@@ -65,7 +65,7 @@ export default function Layout({
                 ))}
               </ul>
             </div>
-            <div className="h-full xl:flex hidden items-center justify-end">
+            <div className="h-full flex items-center justify-end">
               <div className="h-full flex items-center">
                 <div className="w-32 pr-16 h-full flex items-center justify-end border-r" />
                 <div className="w-full h-full flex">
